@@ -175,7 +175,7 @@
     <dl class="facts">
       <div class="fact"><dt>Requires</dt><dd>iOS 17.0 or later</dd></div>
       <div class="fact"><dt>Devices</dt><dd>iPhone &amp; iPad</dd></div>
-      <div class="fact"><dt>Internet</dt><dd>Not needed</dd></div>
+      <div class="fact"><dt>Internet</dt><dd>Only for online play</dd></div>
       <div class="fact"><dt>Accounts</dt><dd>None required</dd></div>
     </dl>
   </div>
@@ -185,7 +185,7 @@
   <div class="wrap">
     <span class="eyebrow">Common questions</span>
     <h2>Playing the game</h2>
-    <p class="note">The full rules are always available inside the app — tap <b>Rules</b> on the title screen or from the top bar during a game.</p>
+    <p class="note">The full rules are always available inside the app — tap <b>Rules</b> in the top bar during a game.</p>
 
     <details>
       <summary>How do I play Mehen?</summary>
@@ -210,20 +210,29 @@
       <summary>What do the lions do?</summary>
       <div class="answer">
         <p>When you guess correctly you may unleash a <b>lion</b> onto one of your opponent's pieces instead of moving your own. That piece is pinned and cannot advance until its owner frees it. Lions make a strong position suddenly fragile, so they're often worth more than a few squares of progress.</p>
+        <p>While a piece is pinned, its owner spends each turn fighting the lion with <b>&ldquo;which fist&rdquo;</b>:</p>
+        <ul>
+          <li>The pinned piece's owner hides <b>one marble</b> in either the left or the right fist.</li>
+          <li>The lion's owner guesses which fist. <b>Wrong</b> — the lion is slain and the piece is free. <b>Right</b> — the lion stays for another turn.</li>
+        </ul>
+        <p>It's an even 50/50 every time, so a pinned piece is never stuck for long. Lions are available on Medium and Hard; Easy plays without them.</p>
       </div>
     </details>
 
     <details>
       <summary>Can I play against another person?</summary>
       <div class="answer">
-        <p>Not in this version. Mehen is currently single-player: you play as red against the computer, which plays blue. Three opponent strengths are available in Settings — easy, medium and hard — and each one bluffs and guesses differently.</p>
+        <p>Yes — online. Tap <b>Play Online</b> on the title screen. One player taps <b>Create game</b> and gets a short room code; the other enters that code and taps <b>Join game</b>. Whoever creates the game chooses the number of pieces and whether lions are on.</p>
+        <p>You can play friends on iPhone, iPad, Android, Windows or Mac. Make sure everyone has the <b>latest version</b> of Mehen: the lion challenge changed in version 2.22, and older versions play it differently. Online games need an internet connection and aren't saved — if either player leaves, that game ends.</p>
+        <p>Single-player is still there too: you play red against the computer, which plays blue.</p>
       </div>
     </details>
 
     <details>
       <summary>How do I change the difficulty or the number of pieces?</summary>
       <div class="answer">
-        <p>Open <b>Options</b> from the top bar. You can set the opponent's strength, choose one to three pieces per player, and switch haptics or the move log on and off.</p>
+        <p>Open <b>Options</b> from the top bar. You can set the opponent's strength, choose one to three pieces per player, and switch vibration or the move log on and off.</p>
+        <p>The three strengths play differently. <b>Easy</b> hides and guesses at random. <b>Medium</b> plays like a typical person, who tends to hide 4s and 5s. <b>Hard</b> plays like a person too, and also learns your habits as the game goes on. The computer never sees the number you've hidden before it guesses.</p>
         <p>Because difficulty and piece count change how a game is set up, confirming with <b>Apply &amp; New Game</b> starts a fresh game. Finish your current game first if you want to keep it.</p>
       </div>
     </details>
@@ -265,13 +274,25 @@
     </details>
 
     <details>
-      <summary>Haptics aren't working</summary>
+      <summary>Vibration isn't working</summary>
       <div class="answer">
-        <p>First check that <b>Haptics</b> is switched on in the app's Options. If it is:</p>
+        <p>First check that <b>Vibration</b> is switched on in the app's Options. If it is:</p>
         <ul>
           <li>iPad models have no haptic engine, so taps are silent there by design.</li>
           <li><b>Low Power Mode</b> suppresses haptics system-wide.</li>
           <li>In iOS <b>Settings &rsaquo; Sounds &amp; Haptics</b>, make sure system haptics are enabled.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Online play won't connect, or the game seems stuck</summary>
+      <div class="answer">
+        <ul>
+          <li><b>Check your internet connection.</b> If it drops during a game, Mehen shows <b>Reconnecting…</b> and catches up on its own once you're back online.</li>
+          <li><b>&ldquo;No game found with that code&rdquo;</b> — check the code with the other player. Each code is for one game only; if in doubt, create a new game and share the new code.</li>
+          <li><b>&ldquo;Opponent may have disconnected&rdquo;</b> means the other device has stopped responding, often because the app was closed or the phone went to sleep. The game carries on if they come back.</li>
+          <li><b>Update both devices.</b> Everyone needs the latest version of Mehen. Versions before 2.22 on iPhone and iPad, or before 3.0.1 on Android, Windows and Mac, use the older lion rules and won't stay in step with newer ones.</li>
         </ul>
       </div>
     </details>
@@ -299,14 +320,15 @@
   <div class="wrap">
     <span class="eyebrow">Your data</span>
     <h2>Privacy</h2>
-    <p class="note">Mehen collects nothing. There is no account to create, no analytics, no advertising, and no network connection of any kind. The full policy is published at <a href="https://nsat-dev.github.io/policy.html">nsat-dev.github.io/policy.html</a>.</p>
+    <p class="note">Mehen collects nothing about you. There is no account to create, no analytics and no advertising. Single-player never uses the internet; the only network connection is optional online play, described below. The full policy is published at <a href="https://nsat-dev.github.io/policy.html">nsat-dev.github.io/policy.html</a>.</p>
     <div class="panel">
       <h3>What the app stores, and where</h3>
       <ul>
         <li><b>Your saved game</b> — kept on your device only, and discarded after seven days.</li>
-        <li><b>Your settings</b> — difficulty, piece count, haptics and move log preferences, stored on your device.</li>
-        <li><b>Nothing is transmitted.</b> No data leaves your iPhone or iPad, because the app never connects to the internet.</li>
-        <li><b>Deleting the app</b> removes everything it saved, with nothing left behind on a server.</li>
+        <li><b>Your settings</b> — difficulty, piece count, vibration and move log preferences, stored on your device.</li>
+        <li><b>Single-player sends nothing.</b> No data leaves your iPhone or iPad unless you choose to play online.</li>
+        <li><b>Online play</b> sends only what's needed to run that one game — the room code and the moves themselves — to the Mehen game server, so both devices stay in step. No name, email, contacts or location is sent. As with any internet connection, the server's host (Cloudflare) can see your network's IP address.</li>
+        <li><b>Deleting the app</b> removes everything it saved on your device.</li>
       </ul>
       <p style="margin:1.3rem 0 0"><a class="mail" href="https://nsat-dev.github.io/policy.html">Read the full privacy policy</a></p>
     </div>
@@ -317,7 +339,7 @@
   <div class="wrap">
     <span class="eyebrow">Comfort and access</span>
     <h2>Accessibility</h2>
-    <p class="note">Mehen uses a dark, high-contrast palette throughout, with large tap targets on the board and marble controls. Haptic feedback can be turned off entirely in Options if you find it distracting, and the game never relies on sound to convey what happened — every result is shown on screen and recorded in the move log.</p>
+    <p class="note">Mehen uses a dark, high-contrast palette throughout, with large tap targets on the board and marble controls. Vibration can be turned off entirely in Options if you find it distracting, and the game never relies on sound to convey what happened — every result is shown on screen and recorded in the move log.</p>
     <p class="note">If something about the game is hard to see, hear or reach, please write in and say so. It genuinely helps.</p>
   </div>
 </section>
@@ -336,6 +358,7 @@
         <li><b>What you expected</b> to happen, and what happened instead.</li>
         <li><b>A screenshot or screen recording</b>, if the problem is something you can see.</li>
         <li><b>Whether it happens every time</b> or only occasionally.</li>
+        <li><b>For online games</b>, which devices both players were using, and the room code if you still have it.</li>
       </ul>
     </div>
     <p class="note" style="margin-top:1.4rem">Send it to <a href="mailto:nsat-dev@pm.me?subject=Mehen%20Bug%20Report">nsat-dev@pm.me</a>.</p>
